@@ -89,7 +89,11 @@
               </p>
             </div>
             <div class="intro__auth">
-              <button class="intro__btn intro__btn--orange" type="button">
+              <button
+                id="registration"
+                class="intro__btn intro__btn--orange"
+                type="button"
+              >
                 Регистрация
               </button>
               <button class="intro__btn intro__btn--yellow" type="button">
@@ -120,6 +124,10 @@
           <input class="input password" placeholder="Пароль" />
           <input class="input repeat_password" placeholder="Повторите пароль" />
         </div>
+      </button>
+      <button id="cross" class="cross_btn" type="button" :hover>
+        <img src="assets/images/cross_btn.png" alt="cross" />
+      </button>
         <div class="reg_btn_container">
           <button class="reg_btn_orange" type="button">
             Зарегистрироваться
@@ -127,5 +135,6 @@
         </div>
       </div>
     </div>
+    <script src="page.js"></script>
   </body>
 </html>
