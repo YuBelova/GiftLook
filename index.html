@@ -97,7 +97,10 @@
               >
                 Регистрация
               </button>
-              <button class="intro__btn intro__btn--yellow" type="button">
+              <button id="login"
+              class="intro__btn intro__btn--yellow" 
+              type="button" 
+              onclick="on()">
                 Войти
               </button>
             </div>
@@ -105,7 +108,7 @@
         </section>
       </div>
     </main>
-    <div id="overlay" onclick="off()">
+    <div class="overlay"></div>
     <div class="reg__popup">
       <div class="reg__info">
         <img src="assets/images/reg_pic.png" alt="reg_pic" />
@@ -138,7 +141,7 @@
       </div>
     </div>
   </div>
-  <!-- <div class="login_popup">
+  <div class="login__popup">
     <p class="login_text">
       Пожалуйста, заполните поля для входа
     </p>
@@ -146,14 +149,17 @@
       <input class="input email" placeholder="Email" />
       <input class="input password" placeholder="Пароль" />
     </div>
-    <button class="intro__btn intro__btn--yellow" type="button">
+    <button class="login_btn" type="button">
       Войти
+    </button>
+    <button id="cross_login" class="cross_btn_login" type="button" :hover>
+      <img src="assets/images/cross_btn_login.png" alt="cross" />
     </button>
     <div class="login_not_yet">
     <p class="not_have_acc">Еще нет аккаунта?</p>
     <p class="register_now">Зарегистрируйтесь тут</p>
     </div>
-  </div> -->
+  </div>
     <script src="page.js"></script>
   </body>
 </html>
